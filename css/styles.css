@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap");
+*, *::after, *::before {
+  font-family: "Nunito", sans-serif, "Font Awesome 6 Free";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  transition: 0.2s linear;
+}
+
+*::selection {
+  background: #f0a400;
+  color: #f5f5f7;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  background: #f7f7f7;
+}
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: #f5f5f7;
+}
+
+::-webkit-slider-thumb {
+  background: #444444;
+  border-radius: 5px;
+}
+
+section {
+  padding: 1.6rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 1rem 9%;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  color: #666666;
+}
+header .logo {
+  font-size: 2.5rem;
+  font-weight: bolder;
+  color: #666666;
+}
+header #menu-bar {
+  font-size: 3rem;
+  cursor: pointer;
+  color: #666666;
+  border: 0.1rem solid #666666;
+  border-radius: 0.3rem;
+  padding: 0.25rem 1.2rem;
+}
+header .navbar {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: #f7f7f7;
+  border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
+  clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+header .navbar.active {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+header .navbar a {
+  margin: 1.5rem;
+  padding: 1.5rem;
+  display: block;
+  border: 0.2rem solid rgba(0, 0, 0, 0.1);
+  border-left: 0.5rem solid #f0a400;
+  font-size: 2rem;
+  color: #666666;
+  background: #ffffff;
+}
+header .navbar a:hover {
+  color: #f0a400;
+}
+
+.home {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  min-height: 100dvh;
+  align-items: center;
+}
+.home .content {
+  padding-top: 6.5rem;
+}
+.home .content h3 {
+  font-size: 4rem;
+  color: #1d1d1f;
+}
+.home .content p {
+  font-size: 2rem;
+  color: #666666;
+  padding: 1rem 0;
+}
+.home .content .btn {
+  display: inline-block;
+  padding: 0.8rem 3rem;
+  border: 0.1rem solid #f0a400;
+  border-radius: 0.5rem;
+  color: #f0a400;
+  cursor: pointer;
+  font-size: 1.7rem;
+}
+.home .content .btn:hover {
+  background: #f0a400;
+  color: #f5f5f7;
+  border: 0.1rem solid #fddd3c;
+}
+.home .content .btn:focus {
+  outline: 2px solid #a61717;
+}
+.home .image img {
+  width: 100%;
+  animation: float 3s linear infinite;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0rem);
+  }
+  50% {
+    transform: translateY(3rem);
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

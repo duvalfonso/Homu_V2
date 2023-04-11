@@ -1,0 +1,58 @@
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: $pure-white;
+  padding: 1rem 9%;
+  box-shadow: $box-shadow;
+  color: $grey;
+
+  .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: $grey;
+  }
+
+  #menu-bar {
+    font-size: 3rem;
+    cursor: pointer;
+    color: $grey;
+    border: .1rem solid $grey;
+    border-radius: .3rem;
+    padding: .25rem 1.2rem;
+  }
+
+  .navbar {
+    position: absolute;
+    top: 100%;
+    left: 0; 
+    right: 0;
+    background: #f7f7f7;
+    border-top: .1rem solid rgba(0, 0, 0, .1);
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    
+    &.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+
+    a {
+      margin: 1.5rem;
+      padding: 1.5rem;
+      display: block;
+      border: .2rem solid rgba(0, 0, 0, .1);
+      border-left: .5rem solid $orange;
+      font-size: 2rem;
+      color: $grey;
+      background: $pure-white;
+
+      &:hover {
+        color: $orange;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+*, *::after, *::before {
+  font-family: 'Nunito', sans-serif, "Font Awesome 6 Free";
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+  transition: .2s linear;
+}
+
+*::selection {
+  background: $orange;
+  color: $white;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  scroll-padding-top: 6rem;
+}
+
+body {
+  background: #f7f7f7;
+}
+
+::-webkit-scrollbar {
+  width: .8rem;
+}
+
+::-webkit-scrollbar-track {
+  background: $white;
+}
+
+::-webkit-slider-thumb {
+  background: $dark-grey;
+  border-radius: 5px;
+}
+
+section {
+  padding: 1.6rem;
+}
